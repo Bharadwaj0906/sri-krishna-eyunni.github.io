@@ -1,11 +1,8 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -23,10 +20,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
 }
 
 header h1 {
@@ -57,8 +53,9 @@ nav a.active:hover {
 
 /* Hero Section */
 .hero {
-  padding: 4rem 2rem;
+  background-color: transparent;
   text-align: center;
+  padding: 4rem 2rem;
 }
 
 .card-hero {
@@ -73,6 +70,15 @@ nav a.active:hover {
   align-items: center;
 }
 
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1f2937;
+  margin-bottom: 1rem;
+}
+
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -83,37 +89,21 @@ nav a.active:hover {
 .hero-name {
   font-size: 2.5rem;
   font-weight: bold;
+  margin-bottom: 0.3rem;
   color: #1f2937;
 }
 
 .hero-subtitle {
   font-size: 1.15rem;
   color: #555;
+  font-weight: 500;
   font-family: 'Open Sans', sans-serif;
-  margin: 1rem 0 1.5rem;
+  margin-bottom: 1.5rem;
   text-align: center;
   max-width: 600px;
 }
 
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #1f2937;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  max-width: 850px;
-  margin: 0 auto 1.2rem;
-  font-size: 1.1rem;
-  color: #444;
-  line-height: 1.75;
-  text-align: justify;
-}
-
-/* Section Cards */
+/* Cards */
 .card-section {
   background-color: white;
   padding: 3rem 2rem;
@@ -129,6 +119,8 @@ nav a.active:hover {
   margin-bottom: 1rem;
   color: #1f2937;
   position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
 
 .card-section h2::after {
@@ -189,41 +181,45 @@ footer {
   margin-top: 2rem;
 }
 
-/* Scroll Arrow - Bottom Right */
+/* Scroll Arrow */
 .scroll-arrow {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 2.6rem;
-  background-color: #2563eb;
-  color: white;
-  border-radius: 50%;
-  padding: 0.6rem 1rem;
-  text-align: center;
-  text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  z-index: 999;
-  animation: bounce 2s infinite;
+  bottom: 40px;
+  right: 25px;
+  font-size: 2.5rem;
+  color: #2563eb;
+  z-index: 100;
   display: none;
+  animation: bounce 1.4s infinite;
+  text-decoration: none;
 }
 
 @keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
 }
 
-.scroll-arrow:hover {
-  background-color: #1d4ed8;
-}
-
+/* Responsive */
 @media (max-width: 600px) {
-  .scroll-arrow {
-    font-size: 1.8rem;
-    bottom: 16px;
-    right: 12px;
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
   }
 }

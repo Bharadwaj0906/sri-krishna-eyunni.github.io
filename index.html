@@ -20,7 +20,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero" id="hero">
+  <section id="hero" class="hero">
     <div class="card-hero">
       <img src="assets/profile.jpeg" alt="Profile Picture" class="profile-photo" />
       <div class="hero-text">
@@ -37,7 +37,7 @@
   </section>
 
   <!-- What I Do -->
-  <section class="card-section" id="what-i-do">
+  <section id="what-i-do" class="card-section">
     <h2>What I Do</h2>
     <ul class="bullet-list">
       <li>Deploy ML models using AWS Lambda & EC2</li>
@@ -50,7 +50,7 @@
   </section>
 
   <!-- Career Objective -->
-  <section class="card-section" id="career">
+  <section id="career" class="card-section">
     <h2>Career Objective</h2>
     <p>
       To leverage academic training in Data Science and practical experience in AI, machine learning, and cloud computing to develop intelligent systems that scale. Committed to contributing to impactful real-world solutions through innovation, data-driven decision-making, and technical excellence.
@@ -68,33 +68,37 @@
     <p>© 2025 Sri Krishna Bharadwaj Eyunni</p>
   </footer>
 
-  <!-- Scroll Arrow (hidden by default) -->
-  <a href="#what-i-do" id="scrollArrow" class="scroll-arrow">&#x21E3;</a>
+  <!-- Scroll Arrow -->
+  <a id="scrollArrow" href="#what-i-do" class="scroll-arrow">&#x21E3;</a>
 
   <script>
     const arrow = document.getElementById("scrollArrow");
     const hero = document.getElementById("hero");
     const whatIDo = document.getElementById("what-i-do");
 
-    const observer = new IntersectionObserver((entries) => {
-      let visibleSection = null;
+    const updateArrow = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          visibleSection = entry.target.id;
+          if (entry.target.id === "hero") {
+            arrow.href = "#what-i-do";
+            arrow.style.display = "block";
+          } else if (entry.target.id === "what-i-do") {
+            arrow.href = "#career";
+            arrow.style.display = "block";
+          }
+        } else {
+          const heroVisible = hero.getBoundingClientRect().top < window.innerHeight &&
+                              hero.getBoundingClientRect().bottom > 0;
+          const whatIDoVisible = whatIDo.getBoundingClientRect().top < window.innerHeight &&
+                                 whatIDo.getBoundingClientRect().bottom > 0;
+          if (!heroVisible && !whatIDoVisible) {
+            arrow.style.display = "none";
+          }
         }
       });
+    };
 
-      if (visibleSection === "hero") {
-        arrow.href = "#what-i-do";
-        arrow.style.display = "block";
-      } else if (visibleSection === "what-i-do") {
-        arrow.href = "#career";
-        arrow.style.display = "block";
-      } else {
-        arrow.style.display = "none";
-      }
-    }, { threshold: 0.6 });
-
+    const observer = new IntersectionObserver(updateArrow, { threshold: 0.5 });
     observer.observe(hero);
     observer.observe(whatIDo);
   </script>

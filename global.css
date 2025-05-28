@@ -105,24 +105,20 @@ h2, h3 {
   font-size: 0.9rem;
 }
 
-/* Contact Links */
-.contact-links {
-  list-style: none;
-  padding-left: 0;
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+  text-align: center;
 }
 
-.contact-links li {
-  margin-bottom: 0.7rem;
+section h3 {
+  font-size: 1.3rem;
+  color: #111827;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
 }
 
-.contact-links a {
-  color: #2563eb;
-  text-decoration: none;
-}
-
-.contact-links a:hover {
-  color: #1d4ed8;
-}
 
 /* Resume Button */
 .resume-button {

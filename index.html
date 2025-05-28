@@ -36,7 +36,7 @@
     </div>
   </section>
 
-  <!-- What I Do Section -->
+  <!-- What I Do -->
   <section class="card-section" id="whatido">
     <h2>What I Do</h2>
     <ul class="bullet-list">
@@ -57,7 +57,7 @@
     </p>
   </section>
 
-  <!-- CTA -->
+  <!-- Call to Action -->
   <section class="card-section">
     <h2>Let’s Work Together</h2>
     <p>If you're looking for a data-driven student who thrives on solving tough problems and learning continuously, feel free to reach out.</p>
@@ -68,8 +68,10 @@
     <p>© 2025 Sri Krishna Bharadwaj Eyunni</p>
   </footer>
 
-  <!-- Scroll Arrow -->
-  <div class="scroll-arrow" id="scroll-arrow">&#x21E3;</div>
+  <!-- Floating Scroll Arrow -->
+  <div class="scroll-arrow" id="scroll-arrow">
+    <span class="arrow-symbol">&#x2193;</span>
+  </div>
 
   <script>
     const arrow = document.getElementById('scroll-arrow');
@@ -78,12 +80,12 @@
 
     function isInViewport(el) {
       const rect = el.getBoundingClientRect();
-      return rect.top <= window.innerHeight && rect.bottom >= 0;
+      return rect.top < window.innerHeight && rect.bottom > 0;
     }
 
     window.addEventListener('scroll', () => {
       if (isInViewport(hero) || isInViewport(whatido)) {
-        arrow.style.display = 'block';
+        arrow.style.display = 'flex';
       } else {
         arrow.style.display = 'none';
       }

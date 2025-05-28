@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset and Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -49,18 +49,12 @@ nav a.active {
   border-bottom: 2px solid #ef4444;
 }
 
-nav a.active:hover {
-  color: #dc2626;
-}
-
-/* Hero Section */
+/* Hero */
 .hero {
-  background-color: transparent;
   text-align: center;
   padding: 4rem 2rem;
 }
 
-/* Hero card */
 .card-hero {
   background-color: white;
   padding: 3rem 2rem;
@@ -73,7 +67,6 @@ nav a.active:hover {
   align-items: center;
 }
 
-/* Hero text alignment */
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -87,8 +80,6 @@ nav a.active:hover {
   font-weight: bold;
   margin-bottom: 0.3rem;
   color: #1f2937;
-  text-align: center;
-  width: 100%;
 }
 
 .hero-subtitle {
@@ -97,15 +88,10 @@ nav a.active:hover {
   font-weight: 500;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 1.5rem;
-  margin-top: 0.3rem;
   text-align: center;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  letter-spacing: 0.3px;
 }
 
-/* Profile image */
 .profile-photo {
   width: 150px;
   height: 150px;
@@ -115,9 +101,7 @@ nav a.active:hover {
   margin-bottom: 1rem;
 }
 
-/* Hero paragraph */
-.hero p,
-.card-hero p {
+.hero p {
   max-width: 850px;
   margin: 0 auto 1.2rem;
   font-size: 1.1rem;
@@ -126,7 +110,7 @@ nav a.active:hover {
   text-align: justify;
 }
 
-/* Reusable Card Section */
+/* Sections */
 .card-section {
   background-color: white;
   padding: 3rem 2rem;
@@ -143,7 +127,6 @@ nav a.active:hover {
   color: #1f2937;
   position: relative;
   display: inline-block;
-  padding-bottom: 0.5rem;
 }
 
 .card-section h2::after {
@@ -162,10 +145,8 @@ nav a.active:hover {
   font-size: 1.05rem;
   line-height: 1.8;
   color: #444;
-  text-align: center;
 }
 
-/* Bullet List */
 .bullet-list {
   text-align: left;
   margin: 0 auto;
@@ -180,7 +161,7 @@ nav a.active:hover {
   margin-bottom: 0.8rem;
 }
 
-/* Resume Button */
+/* Button */
 .resume-button {
   display: inline-block;
   margin-top: 1.5rem;
@@ -206,27 +187,23 @@ footer {
   margin-top: 2rem;
 }
 
-/* Scroll Arrow */
-.fixed-scroll-arrow {
+/* Scroll Arrows */
+.section-arrow {
   position: fixed;
-  top: 50%;
   right: 20px;
+  top: 50%;
   transform: translateY(-50%);
-  font-size: 3rem;
-  color: white;
+  font-size: 2.8rem;
   background-color: #2563eb;
+  color: white;
   border-radius: 50%;
   padding: 0.5rem 0.9rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
   text-decoration: none;
-  z-index: 1000;
-  cursor: pointer;
-  animation: bounce 2s infinite;
-  transition: background-color 0.3s ease;
-}
-
-.fixed-scroll-arrow:hover {
-  background-color: #1d4ed8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: bounce 1.8s infinite;
+  z-index: 999;
+  display: none;
 }
 
 @keyframes bounce {
@@ -238,32 +215,17 @@ footer {
   }
 }
 
-/* Responsive */
+.section-arrow:hover {
+  background-color: #1d4ed8;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav {
-    margin-top: 1rem;
-  }
-
-  .hero-name {
+  .section-arrow {
     font-size: 2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-
-  .profile-photo {
-    width: 120px;
-    height: 120px;
-  }
-
-  .fixed-scroll-arrow {
-    font-size: 2rem;
-    right: 10px;
+    right: 12px;
+    top: auto;
+    bottom: 30px;
+    transform: none;
   }
 }

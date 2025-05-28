@@ -66,9 +66,12 @@ nav a:hover {
 .hero-subtitle {
   font-size: 1.1rem;
   color: #555;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
+
 
 .hero p {
   max-width: 850px;

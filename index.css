@@ -49,33 +49,39 @@ nav a.active:hover {
   color: #dc2626;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
   background-color: #e5e7eb;
   text-align: center;
   padding: 4rem 2rem;
 }
 
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #1f2937;
-  margin-bottom: 1rem;
-}
-
-/* ✅ NEW: Wrap name + subtitle for better centering */
-.hero-text {
+/* Hero card */
+.card-hero {
+  background-color: white;
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Hero inner text alignment */
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Name + Subtitle */
 .hero-name {
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   color: #1f2937;
 }
 
@@ -85,11 +91,24 @@ nav a.active:hover {
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 1.5rem;
+  margin-top: 0.3rem;
   text-align: center;
-  margin-top: 0.5rem;
+  width: 100%;
 }
 
-.hero p {
+/* Profile image */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1f2937;
+  margin-bottom: 1rem;
+}
+
+/* Hero description paragraphs */
+.hero p,
+.card-hero p {
   max-width: 850px;
   margin: 0 auto 1.2rem;
   font-size: 1.1rem;
@@ -126,16 +145,6 @@ nav a.active:hover {
   background-color: #2563eb;
   margin: 0.5rem auto 0;
   border-radius: 2px;
-}
-
-/* Paragraph alignment fix inside cards */
-.card-section p {
-  max-width: 850px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  line-height: 1.75;
-  color: #444;
-  text-align: center;
 }
 
 /* Bullet List */

@@ -50,7 +50,7 @@
   </section>
 
   <!-- Career Objective -->
-  <section class="card-section" id="career">
+  <section class="card-section">
     <h2>Career Objective</h2>
     <p>
       To leverage academic training in Data Science and practical experience in AI, machine learning, and cloud computing to develop intelligent systems that scale. Committed to contributing to impactful real-world solutions through innovation, data-driven decision-making, and technical excellence.
@@ -68,28 +68,7 @@
     <p>© 2025 Sri Krishna Bharadwaj Eyunni</p>
   </footer>
 
-  <!-- Downward Scroll Arrows -->
-  <a href="#what-i-do" class="section-arrow" id="arrow-hero" title="Scroll to What I Do">&#x21E3;</a>
-  <a href="#career" class="section-arrow" id="arrow-whatido" title="Scroll to Career Objective">&#x21E3;</a>
-
-  <!-- JS: Show arrows only in correct section -->
-  <script>
-    const arrowHero = document.getElementById("arrow-hero");
-    const arrowWhatIDo = document.getElementById("arrow-whatido");
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.target.id === "hero") {
-          arrowHero.style.display = entry.isIntersecting ? "block" : "none";
-        }
-        if (entry.target.id === "what-i-do") {
-          arrowWhatIDo.style.display = entry.isIntersecting ? "block" : "none";
-        }
-      });
-    }, { threshold: 0.5 });
-
-    observer.observe(document.getElementById("hero"));
-    observer.observe(document.getElementById("what-i-do"));
-  </script>
+  <!-- Bottom-right scroll arrow -->
+  <a href="#what-i-do" class="scroll-arrow">&#x21E3;</a>
 </body>
 </html>

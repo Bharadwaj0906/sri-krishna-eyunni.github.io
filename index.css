@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+/* Header (Sticky + Shadow) */
 header {
   background-color: #1f2937;
   color: white;
@@ -21,6 +21,10 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 header h1 {
@@ -69,7 +73,7 @@ nav a.active:hover {
   align-items: center;
 }
 
-/* Hero inner text alignment */
+/* Hero text */
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -78,7 +82,6 @@ nav a.active:hover {
   width: 100%;
 }
 
-/* Hero Name + Subtitle */
 .hero-name {
   font-size: 2.5rem;
   font-weight: bold;
@@ -112,7 +115,7 @@ nav a.active:hover {
   margin-bottom: 1rem;
 }
 
-/* Hero description paragraphs */
+/* Hero paragraphs */
 .hero p,
 .card-hero p {
   max-width: 850px;
@@ -123,7 +126,24 @@ nav a.active:hover {
   text-align: justify;
 }
 
-/* Reusable Card Section */
+/* Scroll Indicator */
+.scroll-indicator {
+  margin-top: 1.5rem;
+  animation: bounce 1.6s infinite;
+  font-size: 1.4rem;
+  color: #888;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+/* Card Section */
 .card-section {
   background-color: white;
   padding: 3rem 2rem;
@@ -136,7 +156,7 @@ nav a.active:hover {
 
 .card-section h2 {
   font-size: 1.8rem;
-  margin-bottom: 1rem; /* tighter spacing to paragraph */
+  margin-bottom: 1rem;
   color: #1f2937;
   position: relative;
   display: inline-block;
@@ -153,7 +173,6 @@ nav a.active:hover {
   border-radius: 2px;
 }
 
-/* Updated paragraph inside card-section */
 .card-section p {
   max-width: 700px;
   margin: 0 auto;

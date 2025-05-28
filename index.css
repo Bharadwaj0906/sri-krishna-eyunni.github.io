@@ -79,9 +79,10 @@ nav a.active:hover {
   margin-bottom: 1.5rem;
   text-align: center;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin-top: 0.5rem;
 }
+
 
 
 .hero p {

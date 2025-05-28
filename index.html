@@ -68,28 +68,29 @@
     <p>© 2025 Sri Krishna Bharadwaj Eyunni</p>
   </footer>
 
-  <!-- Floating Scroll Arrow -->
-  <div class="scroll-arrow" id="scroll-arrow">
-    <span class="arrow-symbol">&#x2193;</span>
-  </div>
+  <!-- Scroll Arrow -->
+  <div class="scroll-arrow" id="scroll-arrow">&#x2193;</div>
 
   <script>
-    const arrow = document.getElementById('scroll-arrow');
-    const hero = document.getElementById('hero');
-    const whatido = document.getElementById('whatido');
+    const arrow = document.getElementById("scroll-arrow");
+    const hero = document.getElementById("hero");
+    const whatido = document.getElementById("whatido");
 
-    function isInViewport(el) {
-      const rect = el.getBoundingClientRect();
+    function isInView(section) {
+      const rect = section.getBoundingClientRect();
       return rect.top < window.innerHeight && rect.bottom > 0;
     }
 
-    window.addEventListener('scroll', () => {
-      if (isInViewport(hero) || isInViewport(whatido)) {
-        arrow.style.display = 'flex';
+    function updateArrowVisibility() {
+      if (isInView(hero) || isInView(whatido)) {
+        arrow.style.display = "flex";
       } else {
-        arrow.style.display = 'none';
+        arrow.style.display = "none";
       }
-    });
+    }
+
+    window.addEventListener("scroll", updateArrowVisibility);
+    window.addEventListener("load", updateArrowVisibility); // fixes first-load issue
   </script>
 </body>
 </html>

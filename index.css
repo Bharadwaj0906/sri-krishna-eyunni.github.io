@@ -20,9 +20,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 header h1 {
@@ -47,10 +48,6 @@ nav a.active {
   border-bottom: 2px solid #ef4444;
 }
 
-nav a.active:hover {
-  color: #dc2626;
-}
-
 /* Hero Section */
 .hero {
   background-color: transparent;
@@ -70,19 +67,11 @@ nav a.active:hover {
   align-items: center;
 }
 
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #1f2937;
-  margin-bottom: 1rem;
-}
-
 .hero-text {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -91,6 +80,7 @@ nav a.active:hover {
   font-weight: bold;
   margin-bottom: 0.3rem;
   color: #1f2937;
+  text-align: center;
 }
 
 .hero-subtitle {
@@ -100,10 +90,30 @@ nav a.active:hover {
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 1.5rem;
   text-align: center;
-  max-width: 600px;
 }
 
-/* Cards */
+/* Profile Photo */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1f2937;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+.hero p,
+.card-hero p {
+  max-width: 850px;
+  margin: 0 auto 1.2rem;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+/* Card Sections */
 .card-section {
   background-color: white;
   padding: 3rem 2rem;
@@ -139,8 +149,10 @@ nav a.active:hover {
   font-size: 1.05rem;
   line-height: 1.8;
   color: #444;
+  text-align: center;
 }
 
+/* Bullet List */
 .bullet-list {
   text-align: left;
   margin: 0 auto;
@@ -155,7 +167,7 @@ nav a.active:hover {
   margin-bottom: 0.8rem;
 }
 
-/* Resume Button */
+/* CTA Button */
 .resume-button {
   display: inline-block;
   margin-top: 1.5rem;
@@ -184,32 +196,26 @@ footer {
 /* Scroll Arrow */
 .scroll-arrow {
   position: fixed;
+  right: 20px;
   bottom: 40px;
-  right: 25px;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #2563eb;
-  z-index: 100;
+  animation: bounce 1s infinite;
+  z-index: 999;
   display: none;
-  animation: bounce 1.4s infinite;
-  text-decoration: none;
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(10px); }
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
 }
 
 /* Responsive */
 @media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav {
-    margin-top: 1rem;
-  }
-
   .hero-name {
     font-size: 2rem;
   }
@@ -221,5 +227,11 @@ footer {
   .profile-photo {
     width: 120px;
     height: 120px;
+  }
+
+  .scroll-arrow {
+    right: 10px;
+    bottom: 30px;
+    font-size: 1.5rem;
   }
 }

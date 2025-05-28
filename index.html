@@ -20,7 +20,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="hero" class="hero">
+  <section class="hero" id="hero">
     <div class="card-hero">
       <img src="assets/profile.jpeg" alt="Profile Picture" class="profile-photo" />
       <div class="hero-text">
@@ -36,8 +36,8 @@
     </div>
   </section>
 
-  <!-- What I Do -->
-  <section id="what-i-do" class="card-section">
+  <!-- What I Do Section -->
+  <section class="card-section" id="whatido">
     <h2>What I Do</h2>
     <ul class="bullet-list">
       <li>Deploy ML models using AWS Lambda & EC2</li>
@@ -50,14 +50,14 @@
   </section>
 
   <!-- Career Objective -->
-  <section id="career" class="card-section">
+  <section class="card-section">
     <h2>Career Objective</h2>
     <p>
       To leverage academic training in Data Science and practical experience in AI, machine learning, and cloud computing to develop intelligent systems that scale. Committed to contributing to impactful real-world solutions through innovation, data-driven decision-making, and technical excellence.
     </p>
   </section>
 
-  <!-- Call to Action -->
+  <!-- CTA -->
   <section class="card-section">
     <h2>Let’s Work Together</h2>
     <p>If you're looking for a data-driven student who thrives on solving tough problems and learning continuously, feel free to reach out.</p>
@@ -69,38 +69,25 @@
   </footer>
 
   <!-- Scroll Arrow -->
-  <a id="scrollArrow" href="#what-i-do" class="scroll-arrow">&#x21E3;</a>
+  <div class="scroll-arrow" id="scroll-arrow">&#x21E3;</div>
 
   <script>
-    const arrow = document.getElementById("scrollArrow");
-    const hero = document.getElementById("hero");
-    const whatIDo = document.getElementById("what-i-do");
+    const arrow = document.getElementById('scroll-arrow');
+    const hero = document.getElementById('hero');
+    const whatido = document.getElementById('whatido');
 
-    const updateArrow = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          if (entry.target.id === "hero") {
-            arrow.href = "#what-i-do";
-            arrow.style.display = "block";
-          } else if (entry.target.id === "what-i-do") {
-            arrow.href = "#career";
-            arrow.style.display = "block";
-          }
-        } else {
-          const heroVisible = hero.getBoundingClientRect().top < window.innerHeight &&
-                              hero.getBoundingClientRect().bottom > 0;
-          const whatIDoVisible = whatIDo.getBoundingClientRect().top < window.innerHeight &&
-                                 whatIDo.getBoundingClientRect().bottom > 0;
-          if (!heroVisible && !whatIDoVisible) {
-            arrow.style.display = "none";
-          }
-        }
-      });
-    };
+    function isInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return rect.top <= window.innerHeight && rect.bottom >= 0;
+    }
 
-    const observer = new IntersectionObserver(updateArrow, { threshold: 0.5 });
-    observer.observe(hero);
-    observer.observe(whatIDo);
+    window.addEventListener('scroll', () => {
+      if (isInViewport(hero) || isInViewport(whatido)) {
+        arrow.style.display = 'block';
+      } else {
+        arrow.style.display = 'none';
+      }
+    });
   </script>
 </body>
 </html>

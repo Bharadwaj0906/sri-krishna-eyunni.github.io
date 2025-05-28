@@ -39,6 +39,7 @@ nav a:hover {
   color: #93c5fd;
   transform: translateY(-2px);
 }
+
 nav a.active {
   color: #ef4444;
   border-bottom: 2px solid #ef4444;
@@ -64,6 +65,13 @@ nav a.active:hover {
   margin-bottom: 1rem;
 }
 
+/* ✅ NEW: Wrap name + subtitle for better centering */
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-name {
   font-size: 2.5rem;
   font-weight: bold;
@@ -78,12 +86,8 @@ nav a.active:hover {
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 1.5rem;
   text-align: center;
-  display: block;
-  width: 100%;
   margin-top: 0.5rem;
 }
-
-
 
 .hero p {
   max-width: 850px;

@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9f9f9;
@@ -12,6 +16,7 @@ body {
   line-height: 1.6;
 }
 
+/* Header */
 header {
   background-color: #1f2937;
   color: white;
@@ -44,13 +49,18 @@ nav a.active {
   border-bottom: 2px solid #ef4444;
 }
 
+nav a.active:hover {
+  color: #dc2626;
+}
+
+/* Hero Section */
 .hero {
   background-color: transparent;
   text-align: center;
   padding: 4rem 2rem;
-  position: relative;
 }
 
+/* Hero card */
 .card-hero {
   background-color: white;
   padding: 3rem 2rem;
@@ -63,6 +73,7 @@ nav a.active {
   align-items: center;
 }
 
+/* Hero text alignment */
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -94,6 +105,7 @@ nav a.active {
   letter-spacing: 0.3px;
 }
 
+/* Profile image */
 .profile-photo {
   width: 150px;
   height: 150px;
@@ -103,6 +115,7 @@ nav a.active {
   margin-bottom: 1rem;
 }
 
+/* Hero paragraph */
 .hero p,
 .card-hero p {
   max-width: 850px;
@@ -113,6 +126,7 @@ nav a.active {
   text-align: justify;
 }
 
+/* Reusable Card Section */
 .card-section {
   background-color: white;
   padding: 3rem 2rem;
@@ -121,7 +135,6 @@ nav a.active {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   text-align: center;
-  position: relative;
 }
 
 .card-section h2 {
@@ -152,6 +165,7 @@ nav a.active {
   text-align: center;
 }
 
+/* Bullet List */
 .bullet-list {
   text-align: left;
   margin: 0 auto;
@@ -166,6 +180,7 @@ nav a.active {
   margin-bottom: 0.8rem;
 }
 
+/* Resume Button */
 .resume-button {
   display: inline-block;
   margin-top: 1.5rem;
@@ -182,6 +197,7 @@ nav a.active {
   background-color: #1d4ed8;
 }
 
+/* Footer */
 footer {
   background-color: #1f2937;
   color: white;
@@ -190,20 +206,39 @@ footer {
   margin-top: 2rem;
 }
 
-.scroll-arrow {
-  position: absolute;
-  right: -40px;
+/* Scroll Arrow */
+.fixed-scroll-arrow {
+  position: fixed;
   top: 50%;
+  right: 20px;
   transform: translateY(-50%);
-  font-size: 2.5rem;
-  color: #2563eb;
-  background: white;
+  font-size: 3rem;
+  color: white;
+  background-color: #2563eb;
   border-radius: 50%;
-  padding: 0.3rem 0.6rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 50;
+  padding: 0.5rem 0.9rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  z-index: 1000;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  transition: background-color 0.3s ease;
 }
 
+.fixed-scroll-arrow:hover {
+  background-color: #1d4ed8;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-50%) translateX(0);
+  }
+  50% {
+    transform: translateY(-52%) translateX(10px);
+  }
+}
+
+/* Responsive */
 @media (max-width: 600px) {
   header {
     flex-direction: column;
@@ -227,10 +262,8 @@ footer {
     height: 120px;
   }
 
-  .scroll-arrow {
+  .fixed-scroll-arrow {
+    font-size: 2rem;
     right: 10px;
-    top: auto;
-    bottom: 10px;
-    transform: none;
   }
 }

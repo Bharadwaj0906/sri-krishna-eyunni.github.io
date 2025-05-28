@@ -72,7 +72,6 @@ nav a:hover {
   text-align: center;
 }
 
-
 .hero p {
   max-width: 850px;
   margin: 0 auto 1.2rem;
@@ -97,6 +96,29 @@ nav a:hover {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   color: #1f2937;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.card-section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #2563eb;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Paragraph alignment fix inside cards */
+.card-section p {
+  max-width: 850px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #444;
+  text-align: center;
 }
 
 /* Bullet List */

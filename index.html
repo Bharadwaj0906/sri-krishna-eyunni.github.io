@@ -34,9 +34,6 @@
         Technical expertise includes Python, R, C++, TensorFlow, PyTorch, Scikit-Learn, OpenCV, and cloud platforms such as AWS EC2, Lambda, SQS, and IoT Greengrass. Developed and deployed models for face recognition, fight detection, and sentiment analysis. Tools like Tableau, Power BI, and SPSS have been used for visualization and insight generation.
       </p>
     </div>
-    <div class="scroll-indicator">
-      <span>&#x25BC;</span>
-    </div>
   </section>
 
   <!-- What I Do -->
@@ -70,5 +67,16 @@
   <footer>
     <p>© 2025 Sri Krishna Bharadwaj Eyunni</p>
   </footer>
+
+  <!-- Floating Scroll Arrow -->
+  <div class="side-scroll-indicator">&#x21E3;</div>
+
+  <script>
+    // Optional: Hide arrow on scroll
+    const arrow = document.querySelector('.side-scroll-indicator');
+    window.addEventListener('scroll', () => {
+      arrow.style.display = window.scrollY > 100 ? 'none' : 'block';
+    });
+  </script>
 </body>
 </html>

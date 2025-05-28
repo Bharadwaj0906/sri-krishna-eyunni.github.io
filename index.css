@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header (Sticky + Shadow) */
+/* Header (Sticky) */
 header {
   background-color: #1f2937;
   color: white;
@@ -73,7 +73,6 @@ nav a.active:hover {
   align-items: center;
 }
 
-/* Hero text */
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -105,7 +104,6 @@ nav a.active:hover {
   letter-spacing: 0.3px;
 }
 
-/* Profile image */
 .profile-photo {
   width: 150px;
   height: 150px;
@@ -115,7 +113,6 @@ nav a.active:hover {
   margin-bottom: 1rem;
 }
 
-/* Hero paragraphs */
 .hero p,
 .card-hero p {
   max-width: 850px;
@@ -126,12 +123,17 @@ nav a.active:hover {
   text-align: justify;
 }
 
-/* Scroll Indicator */
-.scroll-indicator {
-  margin-top: 1.5rem;
-  animation: bounce 1.6s infinite;
-  font-size: 1.4rem;
-  color: #888;
+/* Floating Scroll Arrow - Right Bottom */
+.side-scroll-indicator {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  color: #444;
+  opacity: 0.7;
+  z-index: 999;
+  animation: bounce 1.5s infinite;
+  cursor: default;
 }
 
 @keyframes bounce {
@@ -143,7 +145,7 @@ nav a.active:hover {
   }
 }
 
-/* Card Section */
+/* Reusable Card Section */
 .card-section {
   background-color: white;
   padding: 3rem 2rem;

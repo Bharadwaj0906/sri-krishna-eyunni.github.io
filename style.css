@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Base Styles */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9f9f9;
@@ -43,9 +42,9 @@ nav a:hover {
 
 /* Hero */
 .hero {
+  background-color: #e5e7eb;
   text-align: center;
   padding: 4rem 2rem;
-  background-color: #e5e7eb;
 }
 
 .profile-photo {
@@ -65,103 +64,57 @@ nav a:hover {
 }
 
 .hero-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #555;
-  margin-bottom: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
 }
 
 .hero p {
-  max-width: 800px;
-  margin: 0 auto 1rem;
-  font-size: 1.05rem;
+  max-width: 850px;
+  margin: 0 auto 1.2rem;
+  font-size: 1.1rem;
   color: #444;
+  line-height: 1.75;
+  text-align: justify;
 }
 
-/* What I Do */
-.home-services {
-  max-width: 1000px;
-  margin: auto;
+/* Reusable Card Section */
+.card-section {
+  background-color: white;
   padding: 3rem 2rem;
-  text-align: center;
-}
-
-.home-services h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #1f2937;
-}
-
-.home-services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.card {
-  background: white;
-  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 1000px;
   border-radius: 10px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-  font-weight: 500;
-  color: #333;
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
-}
-
-/* Career Objective */
-.career-objective {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.section-heading {
-  font-weight: bold;
-  font-size: 1.6rem;
-  color: #1f2937;
-  flex: 0 0 200px;
-  margin-bottom: 1rem;
-}
-
-.section-content {
-  flex: 1;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #444;
-}
-
-/* Call to Action */
-.call-to-action {
-  background-color: #f3f4f6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   text-align: center;
-  padding: 3rem 2rem;
 }
 
-.call-to-action h2 {
+.card-section h2 {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: #1f2937;
 }
 
-.call-to-action p {
+/* Bullet List */
+.bullet-list {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-left: 1.5rem;
   font-size: 1.05rem;
-  max-width: 700px;
-  margin: auto;
-  margin-bottom: 1.5rem;
+  line-height: 1.8;
   color: #444;
 }
 
+.bullet-list li {
+  margin-bottom: 0.8rem;
+}
+
+/* Resume Button */
 .resume-button {
   display: inline-block;
+  margin-top: 1.5rem;
   padding: 0.8rem 1.5rem;
   background-color: #2563eb;
   color: white;
@@ -195,25 +148,16 @@ footer {
     margin-top: 1rem;
   }
 
-  .career-objective {
-    flex-direction: column;
-  }
-
-  .section-heading {
-    flex: 1;
-    margin-bottom: 0;
-  }
-
-  .profile-photo {
-    width: 120px;
-    height: 120px;
-  }
-
   .hero-name {
     font-size: 2rem;
   }
 
   .hero-subtitle {
     font-size: 1rem;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
   }
 }

@@ -20,41 +20,32 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="card-hero">
       <img src="assets/profile.jpeg" alt="Profile Picture" class="profile-photo" />
       <div class="hero-text">
         <h1 class="hero-name">Sri Krishna Bharadwaj Eyunni</h1>
         <p class="hero-subtitle">Aspiring Data Scientist | AI/ML | Cloud Enthusiast</p>
       </div>
-      <p>
-        Data Science graduate student at Arizona State University with a background in Computer Science Engineering and a specialization in AI and Machine Learning. Experienced in building intelligent, scalable solutions through machine learning, natural language processing, computer vision, and data engineering.
-      </p>
-      <p>
-        Technical expertise includes Python, R, C++, TensorFlow, PyTorch, Scikit-Learn, OpenCV, and cloud platforms such as AWS EC2, Lambda, SQS, and IoT Greengrass. Developed and deployed models for face recognition, fight detection, and sentiment analysis. Tools like Tableau, Power BI, and SPSS have been used for visualization and insight generation.
-      </p>
+      <p>Data Science graduate student at Arizona State University...</p>
+      <p>Technical expertise includes Python, R, C++, TensorFlow, PyTorch, etc.</p>
     </div>
   </section>
 
-  <!-- What I Do -->
-  <section class="card-section">
+  <!-- What I Do Section -->
+  <section class="card-section" id="what-i-do">
     <h2>What I Do</h2>
     <ul class="bullet-list">
       <li>Deploy ML models using AWS Lambda & EC2</li>
       <li>Build real-time detection systems with LRCN</li>
       <li>Perform NLP with scikit-learn and deep learning</li>
-      <li>Design cloud-based data pipelines using Kinesis</li>
-      <li>Build dashboards with Tableau & Power BI</li>
-      <li>Work with PyTorch, TensorFlow, and OpenCV</li>
     </ul>
   </section>
 
-  <!-- Career Objective -->
+  <!-- Career Objective Section -->
   <section class="card-section">
     <h2>Career Objective</h2>
-    <p>
-      To leverage academic training in Data Science and practical experience in AI, machine learning, and cloud computing to develop intelligent systems that scale. Committed to contributing to impactful real-world solutions through innovation, data-driven decision-making, and technical excellence.
-    </p>
+    <p>To leverage academic training in Data Science and practical experience in AI, machine learning...</p>
   </section>
 
   <!-- Call to Action -->
@@ -64,18 +55,29 @@
     <a href="contact.html" class="resume-button">Get in Touch</a>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Sri Krishna Bharadwaj Eyunni</p>
   </footer>
 
-  <!-- Floating Scroll Arrow -->
-  <div class="side-scroll-indicator">&#x21E3;</div>
+  <!-- Floating Arrows -->
+  <div class="section-arrow" id="arrow-hero">&#x21E3;</div>
+  <div class="section-arrow" id="arrow-whatido">&#x21E3;</div>
 
+  <!-- JavaScript: Hide/Show Arrows -->
   <script>
-    // Optional: Hide arrow on scroll
-    const arrow = document.querySelector('.side-scroll-indicator');
+    const arrowHero = document.getElementById('arrow-hero');
+    const arrowWhatIDo = document.getElementById('arrow-whatido');
+
     window.addEventListener('scroll', () => {
-      arrow.style.display = window.scrollY > 100 ? 'none' : 'block';
+      const hero = document.getElementById('hero');
+      const whatIDo = document.getElementById('what-i-do');
+
+      const heroRect = hero.getBoundingClientRect();
+      const whatIDoRect = whatIDo.getBoundingClientRect();
+
+      arrowHero.style.display = heroRect.top <= 0 && heroRect.bottom > window.innerHeight / 2 ? 'block' : 'none';
+      arrowWhatIDo.style.display = whatIDoRect.top <= 0 && whatIDoRect.bottom > window.innerHeight / 2 ? 'block' : 'none';
     });
   </script>
 </body>

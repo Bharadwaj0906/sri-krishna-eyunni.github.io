@@ -39,6 +39,15 @@ nav a:hover {
   color: #93c5fd;
   transform: translateY(-2px);
 }
+/* Active nav link styling */
+nav a.active {
+  color: #ef4444; /* red */
+  border-bottom: 2px solid #ef4444;
+}
+
+nav a.active:hover {
+  color: #dc2626; /* darker red on hover */
+}
 
 /* Section Base */
 section {

@@ -50,7 +50,7 @@
   </section>
 
   <!-- Career Objective -->
-  <section class="card-section">
+  <section class="card-section" id="career">
     <h2>Career Objective</h2>
     <p>
       To leverage academic training in Data Science and practical experience in AI, machine learning, and cloud computing to develop intelligent systems that scale. Committed to contributing to impactful real-world solutions through innovation, data-driven decision-making, and technical excellence.
@@ -68,7 +68,35 @@
     <p>© 2025 Sri Krishna Bharadwaj Eyunni</p>
   </footer>
 
-  <!-- Bottom-right scroll arrow -->
-  <a href="#what-i-do" class="scroll-arrow">&#x21E3;</a>
+  <!-- Scroll Arrow (hidden by default) -->
+  <a href="#what-i-do" id="scrollArrow" class="scroll-arrow">&#x21E3;</a>
+
+  <script>
+    const arrow = document.getElementById("scrollArrow");
+    const hero = document.getElementById("hero");
+    const whatIDo = document.getElementById("what-i-do");
+
+    const observer = new IntersectionObserver((entries) => {
+      let visibleSection = null;
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          visibleSection = entry.target.id;
+        }
+      });
+
+      if (visibleSection === "hero") {
+        arrow.href = "#what-i-do";
+        arrow.style.display = "block";
+      } else if (visibleSection === "what-i-do") {
+        arrow.href = "#career";
+        arrow.style.display = "block";
+      } else {
+        arrow.style.display = "none";
+      }
+    }, { threshold: 0.6 });
+
+    observer.observe(hero);
+    observer.observe(whatIDo);
+  </script>
 </body>
 </html>

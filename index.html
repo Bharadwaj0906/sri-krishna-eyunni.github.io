@@ -76,21 +76,24 @@
     const hero = document.getElementById("hero");
     const whatido = document.getElementById("whatido");
 
-    function isInView(section) {
-      const rect = section.getBoundingClientRect();
-      return rect.top < window.innerHeight && rect.bottom > 0;
+    function isMostlyInView(el) {
+      const rect = el.getBoundingClientRect();
+      const height = window.innerHeight || document.documentElement.clientHeight;
+      const visibleThreshold = 0.4; // 40% of section must be visible
+      const visibleHeight = Math.min(rect.bottom, height) - Math.max(rect.top, 0);
+      return visibleHeight / rect.height > visibleThreshold;
     }
 
-    function updateArrowVisibility() {
-      if (isInView(hero) || isInView(whatido)) {
+    function updateArrow() {
+      if (isMostlyInView(hero) || isMostlyInView(whatido)) {
         arrow.style.display = "flex";
       } else {
         arrow.style.display = "none";
       }
     }
 
-    window.addEventListener("scroll", updateArrowVisibility);
-    window.addEventListener("load", updateArrowVisibility);
+    window.addEventListener("scroll", updateArrow);
+    window.addEventListener("load", updateArrow);
   </script>
 </body>
 </html>

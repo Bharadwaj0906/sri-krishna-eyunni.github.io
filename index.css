@@ -11,6 +11,7 @@ body {
   line-height: 1.6;
 }
 
+/* Header */
 header {
   background-color: #1f2937;
   color: white;
@@ -46,6 +47,7 @@ nav a.active {
   border-bottom: 2px solid #ef4444;
 }
 
+/* Hero Section */
 .hero {
   background-color: transparent;
   text-align: center;
@@ -114,6 +116,7 @@ nav a.active {
   text-align: justify;
 }
 
+/* Reusable Card Section */
 .card-section {
   background-color: white;
   padding: 3rem 2rem;
@@ -190,7 +193,7 @@ footer {
   margin-top: 2rem;
 }
 
-/* ✅ Scroll Arrow */
+/* Scroll Arrow */
 .scroll-arrow {
   position: fixed;
   right: 20px;
@@ -210,10 +213,15 @@ footer {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(6px); }
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
 }
 
+/* Responsive */
 @media (max-width: 600px) {
   header {
     flex-direction: column;

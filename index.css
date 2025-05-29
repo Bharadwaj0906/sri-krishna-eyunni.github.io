@@ -47,7 +47,7 @@ nav a.active {
   border-bottom: 2px solid #ef4444;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
   background-color: transparent;
   text-align: center;
@@ -66,6 +66,15 @@ nav a.active {
   align-items: center;
 }
 
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1f2937;
+  margin-bottom: 1rem;
+}
+
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -77,10 +86,8 @@ nav a.active {
 .hero-name {
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 0.3rem;
   color: #1f2937;
-  text-align: center;
-  width: 100%;
+  margin-bottom: 0.3rem;
 }
 
 .hero-subtitle {
@@ -88,22 +95,13 @@ nav a.active {
   color: #555;
   font-weight: 500;
   font-family: 'Open Sans', sans-serif;
-  margin-bottom: 1.5rem;
   margin-top: 0.3rem;
+  margin-bottom: 1.5rem;
   text-align: center;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 0.3px;
-}
-
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #1f2937;
-  margin-bottom: 1rem;
 }
 
 .hero p,
@@ -221,15 +219,17 @@ footer {
   }
 }
 
-/* Responsive */
+/* Mobile Responsive */
 @media (max-width: 600px) {
   header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
 
   nav {
-    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .hero-name {
@@ -243,5 +243,28 @@ footer {
   .profile-photo {
     width: 120px;
     height: 120px;
+  }
+
+  .card-hero,
+  .card-section {
+    padding: 2rem 1rem;
+  }
+
+  .hero p,
+  .card-section p {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .bullet-list {
+    font-size: 0.95rem;
+  }
+
+  .scroll-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    bottom: 20px;
+    right: 15px;
   }
 }

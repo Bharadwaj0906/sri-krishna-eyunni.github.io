@@ -79,9 +79,8 @@
     function isMostlyInView(el) {
       const rect = el.getBoundingClientRect();
       const height = window.innerHeight || document.documentElement.clientHeight;
-      const visibleThreshold = 0.4; // 40% of section must be visible
       const visibleHeight = Math.min(rect.bottom, height) - Math.max(rect.top, 0);
-      return visibleHeight / rect.height > visibleThreshold;
+      return visibleHeight / rect.height > 0.4;
     }
 
     function updateArrow() {

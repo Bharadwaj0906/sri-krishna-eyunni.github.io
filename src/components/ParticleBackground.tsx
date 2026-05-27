@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 // ─── Canvas: arc reactor + hex grid + particles + atmosphere ─────────────────
@@ -281,8 +281,14 @@ function HudChrome() {
 }
 
 export default function ParticleBackground() {
-  const isLinkedIn = typeof navigator !== "undefined" &&
-    /LinkedIn/i.test(navigator.userAgent);
+  const [isLinkedIn, setIsLinkedIn] = useState(false);
+
+  useEffect(() => {
+    const ua = navigator.userAgent;
+    if (/LinkedInApp/i.test(ua) || /LinkedIn/i.test(ua)) {
+      setIsLinkedIn(true);
+    }
+  }, []);
 
   if (isLinkedIn) {
     return (

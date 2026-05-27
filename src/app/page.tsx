@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main style={{ position: "relative" }}>
       <ParticleBackground />
-      <div style={{ position: "relative", zIndex: 1 }}>
+      <div style={{ position: "relative", zIndex: 1, isolation: "isolate" }}>
         <Navbar />
         <Hero />
         <About />

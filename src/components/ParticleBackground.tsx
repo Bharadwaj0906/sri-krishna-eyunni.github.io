@@ -250,7 +250,7 @@ function IronManCanvas() {
   }, []);
 
   return (
-    <canvas ref={ref} className="pointer-events-none fixed inset-0 z-0 w-full h-full" />
+    <canvas ref={ref} className="pointer-events-none fixed inset-0 z-0 w-full h-full" style={{ willChange: "transform", transform: "translateZ(0)" }} />
   );
 }
 

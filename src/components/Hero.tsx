@@ -64,11 +64,7 @@ export default function Hero() {
   }, [bootDone]);
 
   return (
-    <section id="hero" className="relative flex items-start md:items-center justify-center overflow-hidden" style={{ minHeight: "100dvh" }}>
-
-      {/* Dark bottom fade to cover canvas bleed */}
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-24 z-10"
-        style={{ background: "linear-gradient(to bottom, transparent, rgba(2,4,8,0.95))" }} />
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
 
       {/* Boot overlay */}
       <AnimatePresence>
@@ -92,7 +88,7 @@ export default function Hero() {
       </AnimatePresence>
 
       {bootDone && (
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 flex flex-col md:grid md:grid-cols-[340px_1fr] gap-4 md:gap-16 items-center pt-14 pb-12 md:py-28">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 flex flex-col md:grid md:grid-cols-[340px_1fr] gap-4 md:gap-16 items-center pt-16 pb-8 md:py-28">
 
           {/* ══ LEFT: Real you ══════════════════════════════════ */}
           <motion.div

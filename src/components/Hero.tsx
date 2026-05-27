@@ -64,7 +64,7 @@ export default function Hero() {
   }, [bootDone]);
 
   return (
-    <section id="hero" className="relative flex items-center justify-center overflow-hidden" style={{ minHeight: "100dvh" }}>
+    <section id="hero" className="relative flex items-start md:items-center justify-center overflow-hidden" style={{ minHeight: "100dvh" }}>
 
       {/* Boot overlay */}
       <AnimatePresence>
@@ -88,7 +88,7 @@ export default function Hero() {
       </AnimatePresence>
 
       {bootDone && (
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 flex flex-col md:grid md:grid-cols-[340px_1fr] gap-4 md:gap-16 items-center pt-16 pb-20 md:py-28">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 flex flex-col md:grid md:grid-cols-[340px_1fr] gap-4 md:gap-16 items-center pt-14 pb-24 md:py-28">
 
           {/* ══ LEFT: Real you ══════════════════════════════════ */}
           <motion.div

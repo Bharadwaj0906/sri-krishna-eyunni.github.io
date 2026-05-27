@@ -246,7 +246,7 @@ export default function HolographicIntro({ onDone }: { onDone: () => void }) {
                   {/* Photo with holographic filter */}
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/bharadwaj.jpg"
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bharadwaj.jpg`}
                     alt="Bharadwaj"
                     style={{
                       width: "100%",

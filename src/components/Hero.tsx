@@ -187,7 +187,7 @@ export default function Hero() {
                   boxShadow: "0 0 40px rgba(0,212,255,0.3), 0 0 80px rgba(0,80,200,0.15)",
                 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/bharadwaj.jpg" alt="Bharadwaj"
+                <img src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/bharadwaj.jpg`} alt="Bharadwaj"
                   style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
                 {/* Dark vignette edges */}
                 <div className="absolute inset-0"

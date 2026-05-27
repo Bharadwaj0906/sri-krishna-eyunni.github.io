@@ -13,8 +13,8 @@
     "mem-MEMORY-project": {
       "id": "mem-MEMORY-project",
       "category": "core",
-      "confidence": 0.55,
-      "accessCount": 1,
+      "confidence": 0.7500000000000002,
+      "accessCount": 5,
       "createdAt": 1779827902693
     },
     "mem-MEMORY-critical--server-startup": {
@@ -27,8 +27,8 @@
     "mem-MEMORY-db-setup--if-ownerly-db-missin": {
       "id": "mem-MEMORY-db-setup--if-ownerly-db-missin",
       "category": "core",
-      "confidence": 0.55,
-      "accessCount": 1,
+      "confidence": 0.7500000000000002,
+      "accessCount": 5,
       "createdAt": 1779827902693
     },
     "mem-MEMORY-llm-integration--anthropic-cla": {
@@ -41,8 +41,8 @@
     "mem-MEMORY-key-files": {
       "id": "mem-MEMORY-key-files",
       "category": "core",
-      "confidence": 0.5,
-      "accessCount": 0,
+      "confidence": 0.6500000000000001,
+      "accessCount": 3,
       "createdAt": 1779827902693
     },
     "mem-MEMORY-db-tables": {
@@ -69,8 +69,8 @@
     "mem-MEMORY-production-readiness": {
       "id": "mem-MEMORY-production-readiness",
       "category": "core",
-      "confidence": 0.9600000000000004,
-      "accessCount": 10,
+      "confidence": 1,
+      "accessCount": 13,
       "createdAt": 1779827902693
     },
     "mem-MEMORY-upload-pipeline": {
@@ -146,8 +146,8 @@
     "mem-todos-before-production--must-do-": {
       "id": "mem-todos-before-production--must-do-",
       "category": "todos",
-      "confidence": 0.5,
-      "accessCount": 0,
+      "confidence": 0.6500000000000001,
+      "accessCount": 3,
       "createdAt": 1779827902696
     },
     "mem-todos-features-to-add": {

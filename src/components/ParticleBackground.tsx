@@ -281,6 +281,16 @@ function HudChrome() {
 }
 
 export default function ParticleBackground() {
+  const isLinkedIn = typeof navigator !== "undefined" &&
+    /LinkedIn/i.test(navigator.userAgent);
+
+  if (isLinkedIn) {
+    return (
+      <div className="pointer-events-none fixed inset-0 z-0"
+        style={{ background: "radial-gradient(ellipse at 50% 0%, rgba(0,60,180,0.35) 0%, transparent 70%), radial-gradient(ellipse at 50% 100%, rgba(180,0,10,0.25) 0%, transparent 70%), #020408" }} />
+    );
+  }
+
   return (
     <>
       <IronManCanvas />

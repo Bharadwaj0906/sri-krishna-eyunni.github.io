@@ -1,0 +1,142 @@
+[
+  {
+    "timestamp": 1779845891350,
+    "nodes": 29,
+    "edges": 21,
+    "pageRankSum": 1,
+    "confidences": [
+      0.5800000000000001,
+      0.9100000000000004,
+      0.5,
+      0.9100000000000004,
+      0.7600000000000002,
+      0.7600000000000002,
+      1,
+      0.5,
+      1,
+      1,
+      0.8000000000000003,
+      1,
+      1,
+      0.5900000000000001,
+      1,
+      0.5,
+      1,
+      0.5,
+      0.7400000000000002,
+      0.5,
+      0.5800000000000001,
+      0.5800000000000001,
+      0.5800000000000001,
+      0.6600000000000001,
+      0.5800000000000001,
+      0.5,
+      0.5,
+      0.8300000000000003,
+      0.5
+    ],
+    "accessCounts": [
+      2,
+      9,
+      0,
+      9,
+      6,
+      6,
+      16,
+      0,
+      26,
+      16,
+      8,
+      13,
+      22,
+      3,
+      18,
+      0,
+      16,
+      0,
+      6,
+      0,
+      2,
+      2,
+      2,
+      4,
+      2,
+      0,
+      0,
+      7,
+      0
+    ],
+    "topPatterns": [
+      {
+        "id": "mem-MEMORY-promotions--new-feature-",
+        "summary": "Promotions (new feature)",
+        "confidence": 1,
+        "pageRank": 0.06977711939952894,
+        "accessCount": 22
+      },
+      {
+        "id": "mem-MEMORY-venvs",
+        "summary": "Venvs",
+        "confidence": 1,
+        "pageRank": 0.06814893515265533,
+        "accessCount": 13
+      },
+      {
+        "id": "mem-MEMORY-production-readiness",
+        "summary": "Production readiness",
+        "confidence": 1,
+        "pageRank": 0.06398003552543088,
+        "accessCount": 16
+      },
+      {
+        "id": "mem-MEMORY-ml-grouping",
+        "summary": "ML grouping",
+        "confidence": 1,
+        "pageRank": 0.06132842248493741,
+        "accessCount": 26
+      },
+      {
+        "id": "mem-MEMORY-db-tables",
+        "summary": "DB Tables",
+        "confidence": 1,
+        "pageRank": 0.054537771043709354,
+        "accessCount": 16
+      },
+      {
+        "id": "mem-project_promotions_rewrite-still-to-implement---",
+        "summary": "Still To Implement 🔧",
+        "confidence": 1,
+        "pageRank": 0.03776474826484259,
+        "accessCount": 16
+      },
+      {
+        "id": "mem-project_promotions_rewrite-status--designed--not-yet-impl",
+        "summary": "Status: DESIGNED, NOT YET IMPLEMENTED",
+        "confidence": 1,
+        "pageRank": 0.021924369984083782,
+        "accessCount": 18
+      },
+      {
+        "id": "mem-MEMORY-db-setup--if-ownerly-db-missin",
+        "summary": "DB Setup (if ownerly DB missing)",
+        "confidence": 0.9100000000000004,
+        "pageRank": 0.039162424001300905,
+        "accessCount": 9
+      },
+      {
+        "id": "mem-MEMORY-project",
+        "summary": "Project",
+        "confidence": 0.9100000000000004,
+        "pageRank": 0.021924369984083782,
+        "accessCount": 9
+      },
+      {
+        "id": "mem-MEMORY-upload-pipeline",
+        "summary": "Upload pipeline",
+        "confidence": 0.8000000000000003,
+        "pageRank": 0.0662335685795062,
+        "accessCount": 8
+      }
+    ]
+  }
+]

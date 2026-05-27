@@ -1,0 +1,20 @@
+{
+  "id": "session-1779827902689",
+  "startedAt": "2026-05-26T20:38:22.689Z",
+  "cwd": "/Users/bharadwajeyunni/Documents/Protfolio/portfolio",
+  "context": {
+    "lastMatchedPatterns": [
+      "mem-MEMORY-upload-pipeline",
+      "mem-todos-done"
+    ]
+  },
+  "metrics": {
+    "edits": 84,
+    "commands": 0,
+    "tasks": 0,
+    "errors": 0
+  },
+  "updatedAt": "2026-05-27T01:37:42.730Z",
+  "endedAt": "2026-05-27T01:38:11.350Z",
+  "duration": 17988662
+}

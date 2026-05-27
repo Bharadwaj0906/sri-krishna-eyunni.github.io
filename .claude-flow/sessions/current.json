@@ -1,0 +1,18 @@
+{
+  "id": "session-1779845994852",
+  "startedAt": "2026-05-27T01:39:54.852Z",
+  "cwd": "/Users/bharadwajeyunni/Documents/Protfolio/portfolio",
+  "context": {
+    "lastMatchedPatterns": [
+      "mem-MEMORY-project",
+      "mem-MEMORY-db-setup--if-ownerly-db-missin"
+    ]
+  },
+  "metrics": {
+    "edits": 21,
+    "commands": 0,
+    "tasks": 0,
+    "errors": 0
+  },
+  "updatedAt": "2026-05-27T02:03:31.438Z"
+}

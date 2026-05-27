@@ -1,0 +1,369 @@
+{
+  "version": 1,
+  "updatedAt": 1779845994858,
+  "nodeCount": 29,
+  "nodes": {
+    "mem-MEMORY-ai-engineer-role---skills": {
+      "id": "mem-MEMORY-ai-engineer-role---skills",
+      "category": "core",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902693
+    },
+    "mem-MEMORY-project": {
+      "id": "mem-MEMORY-project",
+      "category": "core",
+      "confidence": 0.55,
+      "accessCount": 1,
+      "createdAt": 1779827902693
+    },
+    "mem-MEMORY-critical--server-startup": {
+      "id": "mem-MEMORY-critical--server-startup",
+      "category": "core",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902693
+    },
+    "mem-MEMORY-db-setup--if-ownerly-db-missin": {
+      "id": "mem-MEMORY-db-setup--if-ownerly-db-missin",
+      "category": "core",
+      "confidence": 0.55,
+      "accessCount": 1,
+      "createdAt": 1779827902693
+    },
+    "mem-MEMORY-llm-integration--anthropic-cla": {
+      "id": "mem-MEMORY-llm-integration--anthropic-cla",
+      "category": "core",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902693
+    },
+    "mem-MEMORY-key-files": {
+      "id": "mem-MEMORY-key-files",
+      "category": "core",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902693
+    },
+    "mem-MEMORY-db-tables": {
+      "id": "mem-MEMORY-db-tables",
+      "category": "core",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902693
+    },
+    "mem-MEMORY-test-credentials": {
+      "id": "mem-MEMORY-test-credentials",
+      "category": "core",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902693
+    },
+    "mem-MEMORY-ml-grouping": {
+      "id": "mem-MEMORY-ml-grouping",
+      "category": "core",
+      "confidence": 0.5800000000000001,
+      "accessCount": 2,
+      "createdAt": 1779827902693
+    },
+    "mem-MEMORY-production-readiness": {
+      "id": "mem-MEMORY-production-readiness",
+      "category": "core",
+      "confidence": 0.9600000000000004,
+      "accessCount": 10,
+      "createdAt": 1779827902693
+    },
+    "mem-MEMORY-upload-pipeline": {
+      "id": "mem-MEMORY-upload-pipeline",
+      "category": "core",
+      "confidence": 0.5800000000000001,
+      "accessCount": 2,
+      "createdAt": 1779827902693
+    },
+    "mem-MEMORY-venvs": {
+      "id": "mem-MEMORY-venvs",
+      "category": "core",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902693
+    },
+    "mem-MEMORY-promotions--new-feature-": {
+      "id": "mem-MEMORY-promotions--new-feature-",
+      "category": "core",
+      "confidence": 0.5800000000000001,
+      "accessCount": 2,
+      "createdAt": 1779827902693
+    },
+    "mem-project_promotions_rewrite----": {
+      "id": "mem-project_promotions_rewrite----",
+      "category": "project_promotions_rewrite",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902694
+    },
+    "mem-project_promotions_rewrite-status--designed--not-yet-impl": {
+      "id": "mem-project_promotions_rewrite-status--designed--not-yet-impl",
+      "category": "project_promotions_rewrite",
+      "confidence": 0.5800000000000001,
+      "accessCount": 2,
+      "createdAt": 1779827902694
+    },
+    "mem-project_promotions_rewrite-already-done--": {
+      "id": "mem-project_promotions_rewrite-already-done--",
+      "category": "project_promotions_rewrite",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902694
+    },
+    "mem-project_promotions_rewrite-still-to-implement---": {
+      "id": "mem-project_promotions_rewrite-still-to-implement---",
+      "category": "project_promotions_rewrite",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902694
+    },
+    "mem-project_promotions_rewrite-final-output-shape-per-promoti": {
+      "id": "mem-project_promotions_rewrite-final-output-shape-per-promoti",
+      "category": "project_promotions_rewrite",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902694
+    },
+    "mem-project_promotions_rewrite-key-design-decisions": {
+      "id": "mem-project_promotions_rewrite-key-design-decisions",
+      "category": "project_promotions_rewrite",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902694
+    },
+    "mem-MEMORY-architecture--3-tier-multi-ten": {
+      "id": "mem-MEMORY-architecture--3-tier-multi-ten",
+      "category": "core",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902695
+    },
+    "mem-todos-before-production--must-do-": {
+      "id": "mem-todos-before-production--must-do-",
+      "category": "todos",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902696
+    },
+    "mem-todos-features-to-add": {
+      "id": "mem-todos-features-to-add",
+      "category": "todos",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902696
+    },
+    "mem-todos-security--before-production-": {
+      "id": "mem-todos-security--before-production-",
+      "category": "todos",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902696
+    },
+    "mem-todos-done": {
+      "id": "mem-todos-done",
+      "category": "todos",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902696
+    },
+    "mem-MEMORY-memory-index": {
+      "id": "mem-MEMORY-memory-index",
+      "category": "core",
+      "confidence": 0.5800000000000001,
+      "accessCount": 2,
+      "createdAt": 1779827902698
+    },
+    "mem-feedback_no_fabricated_numbers----": {
+      "id": "mem-feedback_no_fabricated_numbers----",
+      "category": "feedback_no_fabricated_numbers",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902697
+    },
+    "mem-feedback_resume_no_summary----": {
+      "id": "mem-feedback_resume_no_summary----",
+      "category": "feedback_resume_no_summary",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902698
+    },
+    "mem-feedback_no_backend_changes----": {
+      "id": "mem-feedback_no_backend_changes----",
+      "category": "feedback_no_backend_changes",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779827902699
+    },
+    "insight-1779845891343-7aqv": {
+      "id": "insight-1779845891343-7aqv",
+      "category": "insights",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1779845891343
+    }
+  },
+  "edges": [
+    {
+      "sourceId": "mem-MEMORY-ai-engineer-role---skills",
+      "targetId": "mem-MEMORY-project",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-MEMORY-project",
+      "targetId": "mem-MEMORY-critical--server-startup",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-MEMORY-critical--server-startup",
+      "targetId": "mem-MEMORY-db-setup--if-ownerly-db-missin",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-MEMORY-db-setup--if-ownerly-db-missin",
+      "targetId": "mem-MEMORY-llm-integration--anthropic-cla",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-MEMORY-llm-integration--anthropic-cla",
+      "targetId": "mem-MEMORY-key-files",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-MEMORY-key-files",
+      "targetId": "mem-MEMORY-db-tables",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-MEMORY-db-tables",
+      "targetId": "mem-MEMORY-test-credentials",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-MEMORY-test-credentials",
+      "targetId": "mem-MEMORY-ml-grouping",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-MEMORY-ml-grouping",
+      "targetId": "mem-MEMORY-production-readiness",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-MEMORY-production-readiness",
+      "targetId": "mem-MEMORY-upload-pipeline",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-MEMORY-upload-pipeline",
+      "targetId": "mem-MEMORY-venvs",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-MEMORY-venvs",
+      "targetId": "mem-MEMORY-promotions--new-feature-",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-project_promotions_rewrite----",
+      "targetId": "mem-project_promotions_rewrite-status--designed--not-yet-impl",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-project_promotions_rewrite-status--designed--not-yet-impl",
+      "targetId": "mem-project_promotions_rewrite-already-done--",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-project_promotions_rewrite-already-done--",
+      "targetId": "mem-project_promotions_rewrite-still-to-implement---",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-project_promotions_rewrite-still-to-implement---",
+      "targetId": "mem-project_promotions_rewrite-final-output-shape-per-promoti",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-project_promotions_rewrite-final-output-shape-per-promoti",
+      "targetId": "mem-project_promotions_rewrite-key-design-decisions",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-todos-before-production--must-do-",
+      "targetId": "mem-todos-features-to-add",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-todos-features-to-add",
+      "targetId": "mem-todos-security--before-production-",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-todos-security--before-production-",
+      "targetId": "mem-todos-done",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-MEMORY-project",
+      "targetId": "mem-MEMORY-db-setup--if-ownerly-db-missin",
+      "type": "similar",
+      "weight": 0.3404255319148936
+    }
+  ],
+  "pageRanks": {
+    "mem-MEMORY-ai-engineer-role---skills": 0.011851004861290204,
+    "mem-MEMORY-project": 0.021924369984083782,
+    "mem-MEMORY-critical--server-startup": 0.021168869738127916,
+    "mem-MEMORY-db-setup--if-ownerly-db-missin": 0.039162424001300905,
+    "mem-MEMORY-llm-integration--anthropic-cla": 0.04513911440033735,
+    "mem-MEMORY-key-files": 0.05021938936811352,
+    "mem-MEMORY-db-tables": 0.054537771043709354,
+    "mem-MEMORY-test-credentials": 0.05820846575652263,
+    "mem-MEMORY-ml-grouping": 0.06132842248493741,
+    "mem-MEMORY-production-readiness": 0.06398003552543088,
+    "mem-MEMORY-upload-pipeline": 0.0662335685795062,
+    "mem-MEMORY-venvs": 0.06814893515265533,
+    "mem-MEMORY-promotions--new-feature-": 0.06977711939952894,
+    "mem-project_promotions_rewrite----": 0.011851004861290204,
+    "mem-project_promotions_rewrite-status--designed--not-yet-impl": 0.021924369984083782,
+    "mem-project_promotions_rewrite-already-done--": 0.030486734614965632,
+    "mem-project_promotions_rewrite-still-to-implement---": 0.03776474826484259,
+    "mem-project_promotions_rewrite-final-output-shape-per-promoti": 0.04395111590495025,
+    "mem-project_promotions_rewrite-key-design-decisions": 0.049209649181399834,
+    "mem-MEMORY-architecture--3-tier-multi-ten": 0.011851004861290204,
+    "mem-todos-before-production--must-do-": 0.011851004861290204,
+    "mem-todos-features-to-add": 0.021924369984083782,
+    "mem-todos-security--before-production-": 0.030486734614965632,
+    "mem-todos-done": 0.03776474826484259,
+    "mem-MEMORY-memory-index": 0.011851004861290204,
+    "mem-feedback_no_fabricated_numbers----": 0.011851004861290204,
+    "mem-feedback_resume_no_summary----": 0.011851004861290204,
+    "mem-feedback_no_backend_changes----": 0.011851004861290204,
+    "insight-1779845891343-7aqv": 0.011851004861290204
+  }
+}

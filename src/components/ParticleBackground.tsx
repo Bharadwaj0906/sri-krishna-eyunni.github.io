@@ -191,7 +191,7 @@ function IronManCanvas() {
 
     // ── Scan line ──────────────────────────────────────────────
     const drawScan = () => {
-      const y = ((t * 0.5) % (H() + 80)) - 40;
+      const y = ((t * 2) % (H() + 80)) - 40;
       const g = ctx.createLinearGradient(0, y - 2, 0, y + 2);
       g.addColorStop(0, "transparent");
       g.addColorStop(0.5, "rgba(232,0,13,0.55)");
